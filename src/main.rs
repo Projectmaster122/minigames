@@ -19,13 +19,15 @@ fn get_n_call_gamemode(args: Cli) {
         "unscramble" => minigames::word_scramble::game(),
         "hangman" => minigames::hangman::game(),
         "trivia" => minigames::trivia::game(),
+        "qotd" => minigames::qotd::game(),
         _ => {
             println!("Invalid gamemode!\n
             Available Gamemodes:\n
             Guess - Guess the number,\n
             Unscramble - unscramble a word!\n
             Hangman - classic game\n
-            trivia - Trivia Guess")
+            trivia - Trivia Guess\n
+            qotd - Quote of the day")
         }
     }
 }
